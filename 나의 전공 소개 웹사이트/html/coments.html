@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../image/favicon.ico">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/coment.js"></script>
+</head>
+<body>
+    <a id="a-trans" href="/main.html">
+      <div id="div1">
+          <h1 id="h1-title" class="effect"><span>C</span></h1>
+          <h2 id="h2-title" class="c1">En</h2>
+          <h2 id="h2-title" class="c2">T</h2>
+      </div>
+    </a>
+
+    <ul class="menu">
+      <li>
+        <a href="/html/first semester.html">컴공 맛보기</a>
+        <ul class="submenu">
+          <li><a href="/html/first semester.html">1학기</a></li>
+          <li><a href="/html/second semester.html">2학기</a></li>
+          <li><a href="/html/coments.html">댓글 남기기</a></li>
+        </ul>
+      </li>
+      <li><a href="/main.html">홈페이지</a></li>
+      <li>
+        <a href="/html/basic Concept.html">코딩 맛보기</a>
+        <ul class="submenu">
+          <li><a href="/html/basic Concept.html">기본 개념</a></li>
+          <li><a href="/html/operator.html">연산자</a></li>
+          <li><a href="/html/difficult grammar.html">고급 문법</a></li>
+          <li><a href="/html/supplement.html">부록</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/html/site address.html">사이트</a>
+        <ul class="submenu">
+          <li><a href="https://visualstudio.microsoft.com/ko/vs/" target="_blank">visual 스튜디오</a></li>
+          <li><a href="https://kgokapc.tistory.com/2" target="_blank">C언어 문제집 사이트 모음</a></li>
+          <li><a href="https://www.acmicpc.net/" target="_blank">백준</a></li>
+          <li><a href="/html/site address.html">그 외의 사이트</a></li>
+        </ul>
+      </li>
+      <li><a href="/html/announcement.html">공지</a></li>
+    </ul>
+
+    <img id="img-size" src="../image/댓글창 디자인.jpg" alt="네트워크 연결망"></img>
+
+    <div class="div2">
+      <h2>댓글창</h2>
+      <p>학습에 어려움이 있거나 사이트를 보완했으면 좋겠다 싶은 내용들을 적어주시면 감사하겠습니다.</p>
+    </div>
+
+    <div id="disqus_thread"></div>
+    <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://cent-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</body>
+</html>

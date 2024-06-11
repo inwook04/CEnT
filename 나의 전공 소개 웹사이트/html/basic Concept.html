@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEnT</title>
+    <link rel="icon" href="../image/favicon.ico">
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+    </style>
+</head>
+<body>
+    <a id="a-trans" href="/main.html">
+        <div id="div1">
+            <h1 id="h1-title" class="effect"><span>C</span></h1>
+            <h2 id="h2-title" class="c1">En</h2>
+            <h2 id="h2-title" class="c2">T</h2>
+        </div>
+      </a>
+  
+      <ul class="menu">
+        <li>
+          <a href="/html/basic Concept.html">코딩 맛보기</a>
+          <ul class="submenu">
+            <li><a href="/html/basic Concept.html">기본 개념</a></li>
+            <li><a href="/html/operator.html">연산자</a></li>
+            <li><a href="/html/difficult grammar.html">고급 문법</a></li>
+            <li><a href="/html/supplement.html">부록</a></li>
+          </ul>
+        </li>
+        <li><a href="/main.html">홈페이지</a></li>
+        <li>
+          <a href="/html/first semester.html">컴공 맛보기</a>
+          <ul class="submenu">
+            <li><a href="/html/first semester.html">1학기</a></li>
+            <li><a href="/html/second semester.html">2학기</a></li>
+            <li><a href="/html/coments.html">댓글 남기기</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/html/site address.html">사이트</a>
+          <ul class="submenu">
+            <li><a href="https://visualstudio.microsoft.com/ko/vs/" target="_blank">visual 스튜디오</a></li>
+            <li><a href="https://kgokapc.tistory.com/2" target="_blank">C언어 문제집 사이트 모음</a></li>
+            <li><a href="https://www.acmicpc.net/" target="_blank">백준</a></li>
+            <li><a href="/html/site address.html">그 외의 사이트</a></li>
+          </ul>
+        </li>
+        <li><a href="/html/announcement.html">공지</a></li>
+      </ul>
+
+      <img id="img-size" src="../image/기본 디자인.jpg" alt="programmer"></img>
+
+    <div id="div-back">
+        <h2 id="h2-sub">코딩이란 무엇일까?</h2>
+        <p>코딩은 다른 말로 프로그래밍이라고 부릅니다. 저는 코딩을 컴퓨터로 세상을 표현하는 것이라고 생각합니다.</p>
+
+        <p>어떻게 보면 코딩은 이미 우리의 일상 속에 들어와 있다고 해도 과언이 아닐 것이라 생각합니다. 현재는 스마트폰으로 
+            사진이나 동영상을 찍어 SNS로 자신의 일상을 공유하거나 멋있고 예쁜 사진을 공유하여 인기를 얻는 사람들이 늘어나고 
+            있죠? 그러한 것도 코딩을 통해 만들어진 카메라 어플과 SNS 어플이 있기 때문에 할 수 있는 것입니다.</p>
+
+        <p>그리고 게임이나 웹사이트들도 결국 코딩을 하여 만들어진 잘 짜여진 코드 덩어리라고 볼 수 있죠 이렇듯 코딩은 이미 우리의 일상에 잘 
+            녹아들어 있고 현재는 소프트웨어가 발전하여 AI가 생겨났고 현재 chat GPT로 많이 접해봤을 것이라 생각합니다. 아무튼 
+            저희는 가장 오래되었으면서 현재까지도 많이 사용 중인 C언어를 통해 코딩이 어떤 것인지 한 번 배워보겠습니다.</p>
+        <h2 id="h2-sub">#include <stdio.h> 전처리</h2>
+            <p>우리는 visual 스튜디오와 같은 통합 개발 환경(IDE)를 통해 보통 코딩을 합니다. C언어로 코딩을 할 때 가장 먼저 
+            쓰는 것이 #include <stdio.h>인데요 여기서 #include는 말 그대로 뭔가를 포함한다 또는 불러온다는 것입니다.</p>
+
+        <p>그리고 <stdio.h>에서 stdio는 standard input output의 약자입니다. 한국어로 표준 입출력이라는 뜻인데요. 
+            그 옆에 있는 .h라는 확장자는 헤더파일임을 의미합니다. 다시 말해 표준 입출력 함수를 미리 만들어 놓은 
+            헤더파일을 불러온다 또는 포함한다는 뜻인 겁니다.</p>
+
+        <p>우리는 stdio.h라는 헤더파일을 불러와 printf()라는 출력함수와 scanf()라는 입력함수를 쓸 수 있게 됩니다. 
+            이외에도 gets()나 putchar() 등과 같은 함수들이 있습니다.</p>
+
+        <p>위의 헤더파일 말고도 stdlib.h, math.h, time.h, windows.h 등등... 수많은 헤더파일들이 있습니다. 그러한 헤더파일들을
+            #include를 통해 불러오는 것이죠.</p>
+            
+        <p>우리는 visual 스튜디오와 같은 통합 개발 환경(IDE)를 통해 보통 코딩을 합니다. C언어로 코딩을 할 때 가장 먼저 
+            쓰는 것이 #include <stdio.h>인데요 여기서 #include는 말 그대로 뭔가를 포함한다 또는 불러온다는 것입니다.</p>
+        
+        <p>헤더파일을 불러왔으면 전처리가 끝난 것이라고 볼 수 있을 것입니다. 전처리란 말 그대로 코딩하기 전에 처리해야 할 것
+            이라고 생각하시면 될 것 같습니다.</p>
+        
+        <p>물론 헤더파일만 불러왔다고 해서 전처리가 완전히 끝난 것은 아니지만요. 우리는 전처리를 마친 후 int main()이라는 메인
+            함수를 통해 코딩을 할 것입니다. 메인 함수는 코딩을 마친 후 프로그램을 실행했을 때의 결과를 표시할 수 있게 해주는
+            매우 중요한 함수입니다. 함수에 대해서는 고급 문법에서 자세히 설명해드릴 테니까 현재는 몰라도 상관없습니다.</p>
+        
+        <h2 id="h2-sub">디버깅 그 이후</h2>
+        <p>그래서 코딩을 다 한 다음에는 디버깅이라는 작업을 해야 합니다. 디버깅은 프로그램을 실행했을 시 오류가 나타나지 않도록 
+            코드를 분석하여 오류를 찾아 제거하는 작업이라고 생각해주시면 될 것 같습니다.</p>
+
+        <p>디버깅을 마친 후에는 컴파일러를 통해 프로그램을 실행하게 되는데 여기서 컴파일러에 대한 설명을 하자면 코드를 컴퓨터가
+            해석할 수 있도록 만드는 일종의 소프트웨어 입니다. 컴퓨터는 0과 1로만 이루어진 2진수로 이루어진 기계어로 소통을 할 수 
+            있는데 컴파일러가 우리가 작성한 코드를 그 기계어로 바꿔 컴퓨터와 소통할 수 있게 만드는 것입니다.</p>
+
+        <p>그래서 컴파일러는 우리가 작성한 코드가 들어 있는 소스 파일을 오브젝트 파일로 바꾸어 줍니다. 확장자는 .obj이며 예를 들어
+            test.c를 컴파일 하면 test.obj 파일로 바뀌는 겁니다.</p>
+
+        <p>그 후에는 링커라는 프로그램을 통해 오브젝트 파일을 .exe라는 확장자를 가진 실행 파일로 바꾸어 주는 링크라는 작업을 수행
+            합니다. 그렇게 생성된 실행 파일을 통해 우리가 만든 프로그램이 정상적으로 작동하는지 확인할 수 있습니다.</p>
+        
+        <h2 id="h2-sub">출력하기</h2>
+        <p>printf() 함수는 프로그램을 실행했을 시 실행 화면에 무언가를 출력하는 함수입니다. 예를 들어 printf("Hello World");를 출력하고 싶으면
+            메인 함수 안에 printf문을 적고 return 0;을 적어주면 프로그램 창에 Hello World가 출력됨을 알 수 있습니다. 참고로 여기서 ;(세미콜론)
+            은 절대 빠뜨리고 적으면 안됩니다. 프로그램 오류납니다. 여기서 return 0;은 프로그램을 종료하기 위해 사용하는 거라고 생각해주시면
+            될 것 같습니다.</p>
+
+        <h2 id="h2-sub">／가 붙은 것들</h2>
+        <p>／(역슬래쉬)는 키보드로는 \로 입력할 수 있습니다. ／는 printf문에서 화면에 표시하지 않으면서 어떠한 동작을 수행하는
+            것을 말합니다. 예를 들어 들여쓰기나 특수문자 표시하기, 탭 키를 누른 것과 동일하게 띄어쓰기, 백스페이스 기능 등의 동작이
+            ／n, ／／ 또는 ／", ／' 그리고 ／t, ／b를 printf문에 적절하게 배치하여 동작 가능합니다.</p>
+        
+        <p>printf문에 단연코 많이 사용하는 것은 ／n이라고 할 수 있겠습니다. 예를 들어 Hello World에서 Hello 들여쓰고 World를 입력하고 싶다고
+            했을 때 printf("Hello \n World");를 쓰면 실행 화면에 Hello 들여쓰고 World가 표시되어 있을 것입니다.</p>
+        
+        <h2 id="h2-sub">변수</h2>
+        <p>변수는 여러분들도 수학에서 미지수 x를 통해 처음 배우셨을 거라 생각합니다. 변수라는 것은 말 그대로 변할 가능성이 있는
+            수를 말합니다. 예를 들어 변수 n은 n에 3을 대입했다가 어떠한 값을 더해서 8이 될 수도 있고, 어떤 값을 곱해서 15가 될 수도
+            있는 것입니다.</p>
+
+        <p>변수는 int n;을 통해 정수형 변수를 출력할 수 있습니다. int는 정수, float과 double은 실수, 그리고 char은 문자를 변수로 선언할 수 
+            있습니다. 이외에도 long int와 같은 것도 있습니다.</p>
+        
+        <h2 id="h2-sub">%가 붙은 것들</h2>
+        <p>printf문을 통해 변수를 출력하고 싶으시다면 %가 붙은 형식 지정자를 사용하시면 됩니다. 예를 들어 정수형(int형) 변수 n을 출력하고
+            싶으시면 printf("%d", n);이라고 메인 함수에 적으면 프로그램 창에 n에 만약 5가 입력되어 있었다면 5라고 적히고 프로그램이
+            종료될 것입니다. 이외에 float은 %f, double은 %lf, char은 %c를 통해 출력할 수 있습니다.</p>
+        
+        <h2 id="h2-sub">입력하기</h2>
+        <p>우리가 계산기 프로그램을 쓸 때 5 X 10을 입력하면 50이 출력되는 것을 보실 수 있으실 겁니다. 그러면 거기서 입력은
+            어떻게 하는지 궁금하지 않으신가요? 우리는 scanf() 함수와 변수를 통해 어떠한 값을 키보드를 통해 입력받을 수 있습니다.</p>
+        
+        <p>그 전에 우리는 #pragma warning (disable:4996)을 #include <stdio.h> 바로 밑에 입력해야 합니다. pragma warning은 프로그램에서
+            나타날 수 있는 오류를 의미하고, disable:4996은 오류 코드 4996을 제외해라 또는 무시하라는 뜻입니다. 4996 오류는 scanf문을
+            쓸 때 항상 나타나는 오류이며 이것을 무시하여 scanf문을 정상적으로 작동시킬 수 있습니다.</p>
+        
+        <p>참고로 pragma warning 말고도 비주얼 스튜디오 설정을 통해 4996코드를 무시할 수 있으니 아래의 바로가기로 사이트 
+            주소들을 몇 개 남겨놓겠습니다. -> <a href="/html/site address.html" target="_blank">바로가기</a></p>
+
+        <p>우리는 기본적으로 메인 함수에 int a;를 선언해 놓아야 합니다. 그 후 a에 어떤 값을 입력받기 위해 scanf문을 사용합니다.
+            scanf("%d", &a);라고 적으면 되고 여기서 &는 a에게 %d로 사용자에게 입력받은 값을 주라는 뜻으로 일단 알고 계시면 됩니다.
+            &는 고급 문법 포인터에서 자세히 설명드리도록 하겠습니다.</p>
+
+        <p>아무튼 그렇게 a에 값을 입력 받으셨으면 프로그램에 출력되는지도 확인해 봐야겠죠? scanf문 바로 밑에 printf("%d", a);라고
+            적으시고 return 0;을 적으신 후 실행하여 컴파일하면 프로그램 창에 아무 숫자나 하나 입력하고 엔터를 누르시면 그 입력한 
+            숫자 바로 아래에 숫자가 표시될 것입니다. 예를 들어 7을 입력하면 그 바로 아래에 숫자 7이 출력되는 것을 보실 수 있으실 
+            겁니다.</p>
+
+        <p>우선 기본 개념은 여기서 마치도록 하고 다음 메뉴인 연산자 편으로 가주시면 될 것 같습니다. -> <a href="/html/operator.html" target="_blank">바로가기</a></p>
+    </div>
+    
+    <div class="footer">
+        <p style="float: rignt;">이메일 : jryha6050@gmail.com <br></p>
+        <p style="float: rignt;">연락처 : 010-2195-0905</p>
+      </div>
+</body>
+</html>

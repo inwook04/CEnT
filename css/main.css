@@ -13,14 +13,6 @@ body {
     color: inherit;
 }
 
-#div1 {
-    background-color: cyan;
-    text-align: center;
-    height: 80px;
-    padding: auto;
-    margin: auto;
-}
-
 #h1-title {
     display: inline-block;
     color: rgb(26, 56, 227);

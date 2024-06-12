@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEnT</title>
+    <link rel="icon" href="../image/favicon.ico">
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+    </style>
+</head>
+<body>
+    <a id="a-trans" href="/index.html">
+      <div id="div1">
+          <h1 id="h1-title" class="effect"><span>C</span></h1>
+          <h2 id="h2-title" class="c1">En</h2>
+          <h2 id="h2-title" class="c2">T</h2>
+      </div>
+    </a>
+
+    <ul class="menu">
+      <li>
+        <a href="/html/basic Concept.html">코딩 맛보기</a>
+        <ul class="submenu">
+          <li><a href="/html/basic Concept.html">기본 개념</a></li>
+          <li><a href="/html/operator.html">연산자</a></li>
+          <li><a href="/html/difficult grammar.html">고급 문법</a></li>
+          <li><a href="/html/supplement.html">부록</a></li>
+        </ul>
+      </li>
+      <li><a href="/index.html">홈페이지</a></li>
+      <li>
+        <a href="/html/first semester.html">컴공 맛보기</a>
+        <ul class="submenu">
+          <li><a href="/html/first semester.html">1학기</a></li>
+          <li><a href="/html/second semester.html">2학기</a></li>
+          <li><a href="/html/coments.html">댓글 남기기</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/html/site address.html">사이트</a>
+        <ul class="submenu">
+          <li><a href="https://visualstudio.microsoft.com/ko/vs/" target="_blank">visual 스튜디오</a></li>
+          <li><a href="https://kgokapc.tistory.com/2" target="_blank">C언어 문제집 사이트 모음</a></li>
+          <li><a href="https://www.acmicpc.net/" target="_blank">백준</a></li>
+          <li><a href="/html/site address.html">그 외의 사이트</a></li>
+        </ul>
+      </li>
+      <li><a href="/html/announcement.html">공지</a></li>
+    </ul>
+
+    <img id="img-size" src="../image/base design.jpg" alt="programmer"></img>
+
+    <div id="div-back">
+      <h2 id="h2-sub">진법과 진수의 차이</h2>
+      <p>진법은 0부터 n개의 숫자를 사용하여 수를 표현하는 방법이라고 합니다. 
+        즉, 10진 법은 0부터 9까지의 10개의 숫자를 사용하여 수를 표현합니다.</p>
+      
+      <p>진수는 진법으로 나타내어진 수로 n진법으로 나타낸 수를 n진수라고 합니다. 
+        예를 들어 10진법으로 나타낸 수 25를 10진수라고 부릅니다.</p>
+      
+      <h2 id="h2-sub">컴퓨터에서 주로 쓰는 진법의 종류</h2>
+      <p>우리가 사용하는 숫자는 0 ~ 9까지의 숫자를 사용하는 10진법입니다. 근데 왜 10은 빼냐고요? 10은 9에 1을 더해서
+        단위가 올라가서 10이 된 것이지 실제로는 단위에 따라 1과 0으로 나뉘어 집니다. 즉, 10은 1과 0이 합쳐진 조합인 
+        것입니다.</p>
+      
+      <p>2진법은 0 ~ 1까지의 두 개의 숫자만 사용합니다. 그래서 10진수 10은 2진수로 1010이고 일영일영이라고 읽습니다.
+        1010은 오른쪽부터 왼쪽 순으로 2^0, 2^1, 2^2, 2^3으로 각각 10진수 1, 2, 4, 8로 표시되어 1이 적힌 부분만 더하면
+        2 + 8이 되어 10이 되는 것입니다. 이해가 어려우시다면 아래의 표를 참조해주세요.</p>
+
+      <table style="width:80%">
+        <tr>
+          <th>2진수</th>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>자릿수</th>
+          <td>2^3</td>
+          <td>2^2</td>
+          <td>2^1</td>
+          <td>2^0</td>
+        </tr>
+        <tr>
+          <th>10진수</th>  
+          <td>8</td>
+          <td>4</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+      </table>
+
+      <p>8진법은 0부터 7까지 8개의 숫자를 사용합니다. 예를 들어 275가 있을 수 있죠 이것도 2진수와 마찬가지로 
+        10진수로 변환할 때 자릿수마다 오른쪽부터 왼쪽 순으로 8^0, 8^1, 8^2으로 표현되며 
+        8^0 X 5 + 8^1 X 7 + 8^2 X 2를 계산하면 189가 나오게 됩니다. 이것 또한 아래의 표를 참조해 주세요.</p>
+
+        <table style="width:70%">
+          <tr>
+            <th>8진수</th>
+            <td>2</td>
+            <td>7</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th>자릿수</th>
+            <td>8^2</td>
+            <td>8^1</td>
+            <td>8^0</td>
+          </tr>
+          <tr>
+            <th>10진수</th>  
+            <td>64</td>
+            <td>8</td>
+            <td>1</td>
+          </tr>
+        </table>
+
+      <p>16진법은 0부터 F까지 16개의 숫자를 사용합니다. 16진법은 10 ~ 15가 두 자릿수이기 때문에 16진수가 3 12로 두 
+        자릿수가 된다면 312로 세 자릿수 인지 3 12로 두 자릿수인지 알 방법이 없습니다. 그래서 10 ~ 15를 알파벳 A ~ F
+        로 표현합니다. 예를 들어 F7이 있을 수 있죠 이것 또한 마찬가지로 10진수로 변환할 때 자릿수마다 오른쪽부터 
+        왼쪽 순으로 16^0, 16^1으로 표현되며 16^0 X 7 + 16^1 X F(15)를 계산하면 247이 나오게 됩니다. 
+        이것 또한 아래의 표를 참조해 주세요.</p>
+
+        <table style="width:50%">
+          <tr>
+            <th>2진수</th>
+            <td>F</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <th>자릿수</th>
+            <td>16^1</td>
+            <td>16^0</td>
+          </tr>
+          <tr>
+            <th>10진수</th>  
+            <td>16</td>
+            <td>1</td>
+          </tr>
+        </table>
+      
+      <h2 id="h2-sub">불 대수란?</h2>
+      <p>불 대수는 결국 명제의 연산과 같습니다. 예를 들어 p라는 명제가 참이라서 1이라는 값을 갖고 있고 q라는 
+        명제가 거짓이라서 0이라는 값을 갖습니다. 거기서 p · q라는 and연산에 의해 0이라는 값을 출력하게 됩니다.
+        여기서 and 연산은 ·(곱하기)기호로 표시하며 생략이 가능하고, OR은 + 기호로 표시합니다.</p>
+
+      <p>AND 연산은 두 개의 값이 모두 참이어야 한다는 것입니다. 예를 들어 1 · 1 = 1이고 1 · 0 = 0입니다.
+        OR연산은 하나의 값이라도 참이면 참인 것입니다. 예를 들어 1 + 0 = 1이고 0 + 0 = 0입니다.
+        NOT 연산은 참인 것을 거짓으로 거짓인 것을 참으로 부정하는 것입니다. '기호로 표시하며 '1 = 0입니다.</p>
+      
+      <p>A  + 0 = A, A  + 1 = 1, A  · 1 = A, A  · 0 = 0</p>
+      
+      <p>위의 식은 항등 법칙이라는 것입니다. 이것은 A가 0 또는 1이 되었을 때 A + 0 = A는 0 + 0 = 0으로 A가 되고, 
+        1 + 0 = 1로 A가 되므로 성립하고 A + 1 = 1은 0 + 1 = 1, 1 + 1 = 1이 되므로 성립하는 것을 알 수 있습니다.
+        AND 연산식도 마찬가지로 A가 0 또는 1이 되었을 때를 생각하며 대입해보세요.</p>
+
+      <p>A  + A = A, A  · A = A</p>
+
+      <p>위의 식은 멱등 법칙입니다. 이것은 A에 0 또는 1을 대입하면 0 + 0 = 0, 1 + 1 = 1, 0 · 0 = 0, 1 · 1 = 1이 되므로
+        성립하는 것을 알 수 있습니다.</p>
+
+      <p>A  + 'A = 1, A  · 'A = 0</p>
+
+      <p>위의 식은 보간 법칙입니다. 이것은 A에 0 또는 1을 대입하면 0 + 1 = 1, 1 + 0 = 1, 0 · 1 = 0, 1 · 0 = 0이 되므로
+        성립하는 것을 알 수 있습니다.</p>
+      
+      <p>(A')' = A</p>
+
+      <p>위의 식은 이중 부정 법칙 또는 누승 법칙이라고 불리는 것입니다. A에 0 또는 1을 대입해 보면 (0')' = 0이 되고
+        (1')' = 1이 되므로 성립하는 것을 알 수 있습니다.</p>
+
+      <p>그리고 교환 법칙은 A + B와 B + A가 같고, A · B와 B · A가 같다는 것입니다. 결합법칙은 (A + B) + C = A + (B + C)와
+        (A · B) · C = A · (B · C)라는 것입니다.</p>
+      
+      <p>마지막으로 분배 법칙은 A · ( B + C) = A · B + A · C라는 것이고 A + B · C = (A + B) · (A + C)라는 것입니다. 
+        이런 식으로 불 대수도 덧셈의 3법칙과 똑같은 법칙을 따릅니다.</p>
+
+      <p>이렇게 쓰면 메인 함수에서 st s;와 같이 구조체 변수를 선언하여 사용할 수 있습니다.</p>
+      
+      <p>또한 드모르간의 정리도 있는데 이것은 (A + B)' = A' · B', (A · B)' = A' + B'라는 것으로 A와 B에 OR 연산을 한 것과 
+        AND 연산을 한 것에 각각 부정을 취하면 A와 B에 부정이 분배되고 AND기호는 OR로 OR기호는 AND로 바뀌는 것을 
+        확인하실 수 있습니다.</p>
+      
+      <p>위의 법칙을 잘 활용하면 [A + B'C + D + EF][A + B'C + (D + EF)'] 또한 충분히 구해내실 수 있을 거라고 생각합니다.</p>
+      
+      <p>여기까지 부록을 마치도록 하겠습니다. 추가로 또 알고 싶은 내용이 있으시다면 컴공 맛보기 메뉴의 <a href="/html/coments.html" target="_blank">댓글 남기기</a> 
+        메뉴로 들어가셔서 댓글을 남겨주시면 감사하겠습니다.</p>
+  </div>
+
+    <div class="footer">
+      <p style="float: rignt;">이메일 : jryha6050@gmail.com <br></p>
+      <p style="float: rignt;">연락처 : 010-2195-0905</p>
+    </div>
+</body>
+</html>

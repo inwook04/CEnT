@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEnT</title>
+    <link rel="icon" href="../image/favicon.ico">
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+    </style>
+</head>
+<body>
+    <a id="a-trans" href="/index.html">
+      <div id="div1">
+          <h1 id="h1-title" class="effect"><span>C</span></h1>
+          <h2 id="h2-title" class="c1">En</h2>
+          <h2 id="h2-title" class="c2">T</h2>
+      </div>
+    </a>
+
+    <ul class="menu">
+      <li>
+        <a href="/html/basic Concept.html">코딩 맛보기</a>
+        <ul class="submenu">
+          <li><a href="/html/basic Concept.html">기본 개념</a></li>
+          <li><a href="/html/operator.html">연산자</a></li>
+          <li><a href="/html/difficult grammar.html">고급 문법</a></li>
+          <li><a href="/html/supplement.html">부록</a></li>
+        </ul>
+      </li>
+      <li><a href="/index.html">홈페이지</a></li>
+      <li>
+        <a href="/html/first semester.html">컴공 맛보기</a>
+        <ul class="submenu">
+          <li><a href="/html/first semester.html">1학기</a></li>
+          <li><a href="/html/second semester.html">2학기</a></li>
+          <li><a href="/html/coments.html">댓글 남기기</a></li>
+        </ul>
+      </li>
+      
+      <li>
+        <a href="/html/site address.html">사이트</a>
+        <ul class="submenu">
+          <li><a href="https://visualstudio.microsoft.com/ko/vs/" target="_blank">visual 스튜디오</a></li>
+          <li><a href="https://kgokapc.tistory.com/2" target="_blank">C언어 문제집 사이트 모음</a></li>
+          <li><a href="https://www.acmicpc.net/" target="_blank">백준</a></li>
+          <li><a href="/html/site address.html">그 외의 사이트</a></li>
+        </ul>
+      </li>
+      <li><a href="/html/announcement.html">공지</a></li>
+    </ul>
+
+    <img id="img-size" src="../image/base design.jpg" alt="programmer"></img>
+
+    <div id="div-back">
+      <h2 id="h2-sub">조건문</h2>
+      <p>프로그램에서는 어떠한 조건에 따라 코드를 실행하기도 합니다. 예를 들면 a가 20보다 클 때만 a + b해라 라고 한다면
+        아래와 같은 소스 코드를 짤 수 있을 것입니다.</p>
+      
+      <pre>
+        <p>#include &lt;stdio.h&gt;
+#pragma warning (disable:4996)
+
+int main()
+{
+      int a;
+	    int b;
+	
+	    scanf("%d%d", &a, &b);
+      if(a > 20)
+        printf("%d", a+b);
+      else
+        printf("a는 %d이므로 20보다 작습니다", a);
+      return 0;
+}                
+        </p>
+      </pre>
+
+      <p>이렇게 코드를 짜면 a > 20이라는 조건이 참일 때만 a + b를 실행 창에 출력하고 a가 16이라 거짓이면 a는 16이므로 20보다
+        작습니다 라고 출력하게 됩니다. 참고로 저기서 else는 빼도 상관 없습니다. 그리고 원래 if() 안에 {}를 써서 묶어야 
+        하는데 중괄호 안에 들어갈 코드가 한 줄 짜리 코드라면 중괄호는 생략해도 됩니다.</p>
+      
+      <p>if ~ else if ~ else문은 원래 if ~ else 조합이지만 조건을 좀 더 세부적으로 나누고 싶을 때는 if ~ else if ~ else 조합을 씁니다.
+        만약 조건을 if((a <100) && (a >= 80)) 라고 설정 했을 때 a의 값이 70이라면 그 조건은 거짓이 나와 if문의 문장은 실행하지 않을 것입니다.
+        하지만 else if((a < 80) && (a >= 60))라고 설정하면 else if문 안에 있는 문장이 실행 될 것입니다. 그리고 else문은 if와 else if문 모두 거짓일
+        때 실행하는 것입니다.</p>
+      
+      <p>참고로 else if문은 if문에 있는 조건에 포함되지 않은 세부적인 조건들을 설정하는 것입니다. 즉, if 문에 (a < 100) && (a > 10)라는 조건을
+        설정했으면서 else if문에 (a < 80) && (a > 50)라고 조건을 적으면 if문 안에 있는 문장과 else if문 안에 있는 문장 모두 실행되기 때문에
+        원치 않는 결과가 실행될 수 있습니다. 또한 else if문은 if 다음에만 적으면 무한히 적을 수 있습니다. (단, 너무 많이 적으면 코드가 복잡해지니
+        주의해 주세요)</p>
+      
+      <h2 id="h2-sub">반복문</h2>
+      <p>프로그램에서 어떠한 조건을 반복하고 싶을 때 예를 들면, temp라는 정수형 변수에 1 ~ 10까지 차례대로 더한 결과를
+        화면에 출력하고 싶을 때 우리는 반복문을 사용할 수 있습니다.</p>
+      
+      <p>그럼 코드를 한 번 만들어 볼까요?</p>
+      <pre>
+        <p>#include &lt;stdio.h&gt;
+#pragma warning (disable:4996)
+
+int main()
+{
+      int temp = 0, i = 1;
+	
+	    while(i &lt;= 10)
+	    {
+		    temp += i;
+		    i++;
+	    }
+	    printf("%d", temp);
+	    return 0;
+
+}                
+        </p>
+      </pre>
+
+      <p>위의 코드처럼 코딩을 하셨다면 temp에 i의 값을 1 ~ 10까지 1씩 증가하며 더할 것이고 출력 결과는 55가 될 것입니다.
+        이렇게 while문은 어떠한 조건이 참이 되면 중괄호 안에 있는 문장들을 실행하고 i가 11이 되어 조건이 거짓이 되는 순간
+        while문을 지나쳐서 printf문을 실행하게 됩니다.</p>
+
+      <p>그리고 반복문은 while문만 있는 것이 아닌 for문 또한 존재합니다. 이번엔 for문으로 temp에 1 ~ 10까지 차례대로 누적하여
+        더해보겠습니다.</p>
+
+        <pre>
+          <p>#include &lt;stdio.h&gt;
+#pragma warning (disable:4996)
+  
+int main()
+{
+      int temp = 0, i = 1;
+      
+      for(i = 0; i &lt;= 10; i++)
+        temp += i;
+      printf("%d", temp);
+      return 0;
+}                
+          </p>
+        </pre>
+
+      <p>위의 프로그램 또한 55를 출력하는 것을 보실 수 있습니다. 여기에서 for문의 괄호 안에는 ;으로 3개의 코드를 구분해서 
+        입력되어 있습니다. i에 0을 대입하여 초기값을 지정하고 i &lt;= 10이 참이 될 동안 중괄호 안의 문장을 수행하고, i++은
+        i의 값을 1씩 증가시킵니다. while문하고 코드의 위치만 바뀌었지 원리는 똑같은 것을 알 수 있습니다.</p>
+          
+      <h2 id="h2-sub">함수</h2>
+      <p>함수는 함수 선언, 함수 원형, 함수 호출으로 이루어지게 됩니다. 여기서 함수 선언은 함수가 어떤 형식으로 어떤 변수를
+        가질 것인지 미리 컴퓨터에게 알려주는 것인데 메인 함수 위에 쓰면 안 써도 되기에 설명은 굳이 안 하겠습니다.</p>
+      
+      <p>함수 원형은 아래와 같이 생겼습니다.</p>
+      
+      <pre>
+        <p>
+int test(int a, int b)
+{
+	int sum;
+	sum = a + b;
+	return sum;
+}
+        </p>
+      </pre>
+      
+      <p>여기서 int는 return에 의해 메인 함수에 반환될 값으로 sum은 int형 변수이므로 int형으로 함수를 제작했습니다. 그리고 test는
+        함수 이름이고 괄호 안의 변수는 매개 변수라고 부릅니다. 매개 변수는 메인 함수에서 test(x, y);라고 써서 함수를 호출했을 때
+        x의 값은 a에, y의 값은 b에 복사 받는 겁니다.</p>
+
+      <p>함수 호출은 위에서 봤듯이 test(x, y);라고 메인 함수에 쓰면 test()함수의 코드를 실행 한 후 sum 변수의 값을 반환하여 줍니다.
+        예를 들어 a에 10, b에 20을 복사해 주었다면 sum에는 그 합인 30이 대입되어 메인 함수에 반환하는 것입니다.</p>
+
+      <p>여기서부터는 매우 어려워지므로 개념만을 설명드리겠습니다.</p>
+      
+      <h2 id="h2-sub">포인터</h2>
+      <p>컴퓨터의 메모리에는 c언어로 만든 소스 코드에서 선언된 변수들이 스택이라는 자료구조에 차곡차곡 쌓이게 됩니다.
+        여기서 스택은 변수를 담는 공간이라고 생각하면 되시며 int형의 경우는 4바이트 만큼의 공간을 부여받고, double형의
+        경우 8바이트 만큼의 공간을 부여받습니다.</p>
+
+      <p>예를 들어 정수형 변수 a는 컴퓨터 메모리 공간 중 하나의 스택에 1001번지 ~ 1004번지까지 부여받고 그 안에 변수 a에
+        대입된 값을 저장합니다.</p>
+      
+      <p>그래서 메모리의 1001번지에 가보면 a에 대입된 값이 10이라고 하면 10이 들어 있을 것입니다.</p>
+      
+      <p>포인터는 그 1001번지를 저장하는 변수이며 정수형 변수의 주소를 저장하므로 int *p;로 선언합니다. 여기서 *는
+        간접 참조 연산자라는 것으로 변수의 주소를 가리키는 것이며 그 주소에 있는 데이터를 읽기 위해 사용합니다.</p>
+
+      <p>그리고 &는 주소 연산자이며 만약 a라는 변수에 &a를 붙이면 이것은 변수 a의 주소를 말합니다. 그래서 a의 주소를 *p에 
+        저장하고 싶다고 한다면 p = &amp;a;라고 써야 합니다.</p>
+
+      <p>만약 *p에 대입하고 싶은 값이 없다(초기화할 값이 없다)고 한다면 int *p = NULL로 선언해야 합니다. 변수에 아무런 
+        값도 대입되어 있지 않으면 -39285032850와 같은 쓰레기값이 들어있게 됩니다. 따라서 포인터 변수 또한 그렇게 되므로 
+        그 쓰레기값이 저장된 주소로 가게 되고 결국 이상한 주소를 건드리게 되어 운영체제에 손상이 가거나 심하면 컴퓨터가 
+        꺼지고 다운될 수 있습니다.</p>
+
+      <p>그래서 포인터는 굉장히 많은 신경을 들여서 코딩해야 하는 고급 문법입니다. 이것은 %p라는 형식 지정자를 사용하며 
+        printf("%p", p); 라고 입력하면 p가 가리키는 주소를 출력합니다. 그리고 %u를 쓰면 그 주소에 있는 데이터를 출력합니다.</p>
+
+      <h2 id="h2-sub">배열</h2>
+      <p>배열은 int a[10];과 같이 선언할 수 있으며 정수형 변수 a에 0번부터 9번까지 최대 10개의 정수를 저장하겠다는 
+        뜻입니다. 이 변수에 정수를 입력하기 위해서는 for(int i = 0; i &lt; 10; i++) 안에 scanf("%d", &a[i]);라고 쓰면 입력 받을 수 
+        있을 것입니다.</p>
+      
+      <p>배열은 기본적으로 a[0]의 주소를 가리키고 있습니다. 배열은 메모리에 1001번지 ~ 1004번지까지 a[0], 1005번지 ~ 
+        1008번지까지 a[1] 이런 식으로 4바이트씩 주소를 a[9]까지 총 40바이트의 메모리를 나눠 같게 됩니다.
+        거기서 배열의 처음 시작인 1001번지의 주소를 가리키게 됨으로써 배열은 포인터라고 볼 수 있습니다.</p>
+      
+      <h2 id="h2-sub">구조체</h2>
+      <p>구조체는 배열이 정수, 실수, 문자를 한꺼번에 입력받지 못한다는 불편한 점 때문에 만들어진 것입니다.</p>
+      
+      <pre>
+        <p>
+struct st {
+	  int a;
+	  double b;
+	  char c;	
+};
+        </p>
+      </pre>
+
+      <p>위처럼 함수의 형태를 띠고 있으며 닫는 중괄호에 새미콜론을 붙이는 것을 잊어선 안됩니다. 
+        전처리 바로 밑에다가 쓰는 것이 좋습니다. 그리고 메인함수에서는 struct st s;라고 선언하여 사용합니다.</p>
+      
+      <p>그래서 메인 함수에서는 s.a, s.b, s.c와 같이 일반 변수들처럼 사용하며 만약 struct st를 생략하고 싶다면</p>
+      
+      <pre>
+        <p>
+struct st {
+	  int a;
+	  double b;
+	  char c;	
+};
+        </p>
+      </pre>
+
+      <p>이렇게 쓰면 메인 함수에서 st s;와 같이 구조체 변수를 선언하여 사용할 수 있습니다.</p>
+      
+      <p>이렇게 우리는 고급 문법들을 거의 대부분 살펴보았습니다. 아직 많이 부족한 부분들이 있으며 조금씩 수정해
+        나가며 고칠 생각입니다. 문자열에 대해서도 추가하고 싶었으나 배열과 비슷한 부분도 있고 잘 한 글자만
+        틀려도 작동이 안 되는 경우가 많아서 뺐습니다. 나중에 컴퓨터 공학과에 간다면 배우는 내용이니 제가 쓴
+        내용들은 참고만 해주시길 바랍니다. 그럼 코딩 맛보기는 여기서 마치도록 하고 2진수와 불 대수에 관한 설명을 
+        부록을 통해 다루도록 하겠습니다.</p>
+      
+      <p><a href="/html/supplement.html" target="_blank">부록 바로가기</a></p>
+  </div>
+
+    <div class="footer">
+      <p style="float: rignt;">이메일 : jryha6050@gmail.com <br></p>
+      <p style="float: rignt;">연락처 : 010-2195-0905</p>
+    </div>
+</body>
+</html>
